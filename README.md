@@ -393,16 +393,6 @@ npm run test:e2e
 - Input sanitization
 - Error message sanitization
 
-## 📜 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🙏 Acknowledgments
-
-- **Fiber Framework**: Lightning-fast Go web framework
-- **Redis**: High-performance in-memory database
-- **Next.js Team**: Amazing React framework
-- **Go Community**: Excellent ecosystem and tools
 
 ## 📞 Support
 
