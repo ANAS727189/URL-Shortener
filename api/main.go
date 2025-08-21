@@ -24,8 +24,14 @@ func main() {
 	_ = godotenv.Load()
 	app := fiber.New()
 
+	origins := os.Getenv("FRONTEND_URLS")
+	if origins == "" {
+		origins = "*"
+	}
+
 	app.Use(cors.New(cors.Config{
-		AllowOrigins: "*",
+		AllowOrigins: origins,
+		AllowMethods: "GET,POST,PUT,DELETE,OPTIONS",
 		AllowHeaders: "Origin, Content-Type, Accept",
 	}))
 
