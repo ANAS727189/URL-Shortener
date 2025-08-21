@@ -18,7 +18,6 @@ func ResolveURL(c *fiber.Ctx) error {
 	} else if err != nil {
 		return c.Status(fiber.StatusInternalServerError).JSON(fiber.Map{"error": "Internal server error"})
 	}
-
 	rInr := db.CreateClient(1)
 	defer rInr.Close()
 
