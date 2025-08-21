@@ -6,5 +6,5 @@ frontend/node_modules/
 frontend/.env
 
 # Build artifacts
-api/main
+api/.env
 *.log
