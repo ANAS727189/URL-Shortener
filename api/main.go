@@ -31,6 +31,13 @@ func main() {
 
 	app.Use(logger.New())
 
+	app.Get("/health", func(c *fiber.Ctx) error {
+		return c.JSON(fiber.Map{
+			"status":  "ok",
+			"message": "URL Shortener backend is running 🚀",
+		})
+	})
+
 	setupRoutes(app)
 
 	log.Fatal(app.Listen(os.Getenv("APP_PORT")))
