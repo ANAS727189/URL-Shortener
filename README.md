@@ -11,7 +11,7 @@
 ## 🚀 Live Demo
 
 - **Backend API**: [https://url-shortener-wn04.onrender.com](https://url-shortener-wn04.onrender.com)
-- **Frontend**: [Coming Soon]
+- **Frontend**: [https://urlx-service.vercel.app/]
 - **Health Check**: [https://url-shortener-wn04.onrender.com/health](https://url-shortener-wn04.onrender.com/health)
 
 ## ✨ Features
@@ -92,8 +92,8 @@ graph TB
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/ANAS727189/url-shortener.git
-   cd url-shortener
+   git clone https://github.com/ANAS727189/URL-Shortener
+   cd api
    ```
 
 2. **Start the services**
@@ -104,7 +104,7 @@ graph TB
 3. **Access the application**
    - API: http://localhost:8080
    - Redis: localhost:6379
-   - Frontend: http://localhost:3000 (if running separately)
+   - Frontend: http://localhost:3000
 
 ### 🛠️ Local Development
 
@@ -127,12 +127,12 @@ graph TB
    
    Configure your `.env` file:
    ```env
-   APP_PORT=:8080
-   DB_ADDR=localhost:6379
+   APP_PORT=:YOUR_APP_PORT
+   DB_ADDR=YOUR_DB_ADDR
    DB_PASSWORD=
-   API_QUOTA=10
-   DOMAIN=localhost:8080
-   FRONTEND_URLS=http://localhost:3000
+   API_QUOTA=YOUR_API_QUOTA
+   DOMAIN=YOUR_DOMAIN
+   FRONTEND_URLS=FRONTEND_URLS
    ```
 
 4. **Start Redis** (if not using Docker)
@@ -189,7 +189,7 @@ Content-Type: application/json
 {
   "url": "https://example.com",
   "short": "custom-alias", // optional
-  "expiry": 24 // hours, optional
+  "expiry": 24 
 }
 ```
 
@@ -259,17 +259,17 @@ GET /health
 
 #### Backend (`api/.env`)
 ```env
-APP_PORT=:8080              # Server port
-DB_ADDR=redis:6379          # Redis address
-DB_PASSWORD=                # Redis password (empty for no auth)
-API_QUOTA=10                # Rate limit per window
-DOMAIN=localhost:8080       # Your domain (to prevent loops)
-FRONTEND_URLS=*             # Allowed CORS origins
+APP_PORT=:YOUR_APP_PORT            # Server port
+DB_ADDR=YOUR_DB_ADDR               # Redis address
+DB_PASSWORD=YOUR_DB_PASSWORD       # Redis password (empty for no auth)
+API_QUOTA=YOUR_API_QUOTA           # Rate limit per window
+DOMAIN=YOUR_DOMAIN                 # Your domain (to prevent loops)
+FRONTEND_URLS=YOUR_FRONTEND_URLS   # Allowed CORS origins
 ```
 
 #### Frontend (`frontend/.env.local`)
 ```env
-NEXT_PUBLIC_API_URL=http://localhost:8080    # Backend API URL
+NEXT_PUBLIC_API_URL=YOUR_Backend_API_URL
 ```
 
 ### Docker Configuration
@@ -369,10 +369,8 @@ npm run test:e2e
 
 ## 📈 Monitoring
 
-### Health Endpoints
+### Health Endpoint
 - `/health`: Basic service health
-- `/metrics`: Prometheus metrics (coming soon)
-- `/stats`: Usage statistics
 
 ### Logging
 - Structured JSON logging
@@ -408,9 +406,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/ANAS727189/url-shortener/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/ANAS727189/url-shortener/discussions)
-- **Email**: anas727189@gmail.com
+- **Issues**: [GitHub Issues](https://github.com/ANAS727189/URL-Shortener/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/ANAS727189/URL-Shortener/discussions)
+- **Email**: anas23khan083@gmail.com
 
 ---
 
@@ -418,6 +416,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **[⬆ Back to Top](#-url-shortener)**
 
-Made with ❤️ by [ANAS727189](https://github.com/ANAS727189)
+Built by [ANAS727189](https://github.com/ANAS727189)
 
 </div>
