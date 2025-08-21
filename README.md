@@ -11,7 +11,7 @@
 ## 🚀 Live Demo
 
 - **Backend API**: [https://url-shortener-wn04.onrender.com](https://url-shortener-wn04.onrender.com)
-- **Frontend**: [https://urlx-service.vercel.app/]
+- **Frontend**: [https://urlx-service.vercel.app/](https://urlx-service.vercel.app/)
 - **Health Check**: [https://url-shortener-wn04.onrender.com/health](https://url-shortener-wn04.onrender.com/health)
 
 ## ✨ Features
