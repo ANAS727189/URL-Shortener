@@ -17,10 +17,11 @@ func setupRoutes(app *fiber.App) {
 }
 
 func main() {
-	err := godotenv.Load()
-	if err != nil {
-		log.Fatalf("Error loading .env file")
-	}
+	// err := godotenv.Load()
+	// if err != nil {
+	// 	log.Fatalf("Error loading .env file")
+	// }
+	_ = godotenv.Load()
 	app := fiber.New()
 
 	app.Use(cors.New(cors.Config{
