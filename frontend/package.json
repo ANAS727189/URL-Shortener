@@ -8,6 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.31.4",
     "next": "15.5.0",
     "next-qrcode": "^2.5.1",
     "react": "19.1.0",

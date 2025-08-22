@@ -75,7 +75,9 @@ export default function HomePage() {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto mb-8">
+      <ShortenerForm />
+
+       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 max-w-2xl mx-auto mb-8">
         <div className="bg-black border border-green-400 p-4 rounded">
           <div className="text-2xl font-bold text-green-400">50+</div>
           <div className="text-sm text-gray-400 font-mono">URLs Shortened</div>
@@ -89,8 +91,6 @@ export default function HomePage() {
           <div className="text-sm text-gray-400 font-mono">Uptime</div>
         </div>
       </div>
-
-      <ShortenerForm />
       
       <div className="mt-12 text-green-400 font-mono text-xs opacity-60">
         <pre>{`
